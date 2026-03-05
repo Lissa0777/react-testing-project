@@ -6,7 +6,7 @@ El objetivo del proyecto es implementar funcionalidades básicas de un carrito y
 
 ---
 
-## Funcionalidades
+##  Funcionalidades
 
 * Mostrar productos disponibles
 * Agregar productos al carrito
@@ -25,7 +25,7 @@ El objetivo del proyecto es implementar funcionalidades básicas de un carrito y
 
 ---
 
-##  Pruebas unitarias
+## Pruebas unitarias
 Este proyecto utiliza **Jest** para realizar pruebas unitarias.
 
 ### Ejecutar los tests
