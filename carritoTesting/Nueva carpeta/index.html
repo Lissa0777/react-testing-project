@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CineVerse Store</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<header class="header">
+  <h1>🎬 CineVerse
+  </h1>
+
+  <button id="openCartBtn" class="cart-btn" aria-label="Abrir carrito">
+    🛒 <span id="cartCount" class="badge">0</span>
+  </button>
+</header>
+
+<main class="layout">
+
+  <section>
+    <h2>Películas y Comics disponibles</h2>
+    <div id="productsGrid" class="grid"></div>
+  </section>
+
+  <aside class="cart" aria-label="Carrito de compras">
+
+    <div class="cart__header">
+      <h2>Tu carrito</h2>
+      <button id="clearCartBtn" class="btn btn--danger">
+        Vaciar carrito
+      </button>
+    </div>
+
+    <div id="cartEmpty" class="muted">
+      No hay productos en tu carrito
+    </div>
+
+    <ul id="cartList" class="cart__list"></ul>
+
+    <div class="cart__footer">
+      <div class="row">
+        <span>Total:</span>
+        <strong id="subtotal">$0</strong>
+      </div>
+    </div>
+
+  </aside>
+
+</main>
+
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+:root{
+  --bg:#0b0f19;
+  --card:#141b2d;
+  --text:#f5f5f5;
+  --muted:#9aa3b2;
+
+  /* colores de tu paleta */
+  --accent:#8b0f2e;   /* rojo vino dominante */
+  --accent2:#62176f;  /* morado oscuro */
+  --blue:#155e7b;     /* azul de contraste */
+  --purple:#391c3e;   /* morado oscuro */
+
+  --border:rgba(255,255,255,.08);
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Segoe UI,Arial;
+  background:linear-gradient(180deg,#0b0f19,#120c16);
+  color:var(--text);
+}
+
+/* HEADER */
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 30px;
+
+  background:linear-gradient(90deg,var(--accent),#5a0820);
+
+  border-bottom:1px solid var(--border);
+}
+
+.header h1{
+  margin:0;
+  font-size:24px;
+  letter-spacing:1px;
+}
+
+/* LAYOUT */
+
+.layout{
+  display:grid;
+  grid-template-columns:1fr 360px;
+  gap:25px;
+  padding:25px;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* PRODUCT GRID */
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+/* CARDS */
+
+.card{
+  background:var(--card);
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  transition:.25s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 12px 25px rgba(0,0,0,.6);
+  border-color:var(--accent);
+}
+
+.card img{
+  width:100%;
+  height:210px;
+  object-fit:cover;
+}
+
+.card__body{
+  padding:15px;
+}
+
+.card__title{
+  font-size:16px;
+  margin:0 0 8px;
+}
+
+.card__price{
+  font-weight:bold;
+  color:var(--accent2);
+  font-size:17px;
+}
+
+/* BOTONES */
+
+button{
+  cursor:pointer;
+}
+
+.btn{
+  padding:8px 14px;
+  border:none;
+  border-radius:6px;
+  background:var(--accent);
+  color:white;
+  transition:.2s;
+}
+
+.btn:hover{
+  background:var(--accent2);
+}
+
+.btn--danger{
+  background:var(--purple);
+}
+
+/* CARRITO */
+
+.cart{
+  background:var(--card);
+  border-radius:14px;
+  padding:18px;
+  border:1px solid var(--border);
+}
+
+.cart__header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.cart__list{
+  list-style:none;
+  padding:0;
+  margin:18px 0;
+}
+
+.cart__list li{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:12px;
+}
+
+.cart__footer{
+  border-top:1px solid var(--border);
+  padding-top:12px;
+}
+
+.row{
+  display:flex;
+  justify-content:space-between;
+  font-size:17px;
+}
+
+/* TEXTO */
+
+.muted{
+  color:var(--muted);
+}
+
+/* BADGE CARRITO */
+
+.badge{
+  background:var(--accent2);
+  padding:4px 8px;
+  border-radius:12px;
+  font-size:12px;
+  margin-left:5px;
+}
+
+/* BOTON CARRITO */
+
+.cart-btn{
+  background:transparent;
+  border:none;
+  font-size:18px;
+  color:white;
+}
